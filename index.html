@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crystal Deities</title>
+    <!-- links the reset css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- links the Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2|Jim+Nightshade|Lovers+Quarrel" rel="stylesheet">
+    <!-- links the Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- links my external css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Make a jumbotron to contain the title of the game, and instructions -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Crystal Clarity</h1>
+            <h2>Come and seek enlightenment with a few of your friendly neighborhood deities!</h2>
+            <h4>Each unearthly ruler has been assigned a numerical value, much in the same manner as
+          	each person on earth has an intrinsic value. Click a god to see their worth reflected in the current number. There will be math involved here, my children; but only because we know you are sufficiently strong to endure this 
+          	plight.</h4>
+            <h4>Aim to achieve an ever-higher score, up to and including the target number given you.</h4>
+            <h4>But beware! You must reach the target number to win, but you may not go higher, or (not unlike a prophet who feels himself more spiritual than his acts reflect) ye shall be cast down into the pits of... well, losing a round. Not the worst fate, admittedly, but it isn't great, either.</h4>
+            <h4>Each round the gods, fickle beings that they are, shall have a new value. And much like the "meaning of life"
+          	varies from person to person, you shall have a new target number as well.</h4>
+            <h2>GO FORTH! And math well, my children. Math well.</h2>
+        </div>
+    </div>
+    <!-- Holds the line of text to be populated -->
+    <div class="container">
+        <h1 id="Target">Target Number: <span id="numToGuess"></span></h1>
+        <h1 id="Current">Current Number:<span id="currentNum"></span></h1>
+    </div>
+    <!-- Holds the four photos available to click -->
+    <div class="container">
+        <div id="photos">
+            <!-- imgs will be inserted by the Js/jQ -->
+        </div>
+    </div>
+    <!-- Keeps tally of wins and losses -->
+    <div class="container">
+        <h1 id="winCount">Wins: <span id="wins">0</span> </h1>
+        <h1 id="lossCount">Losses: <span id="losses">0</span> </h1>
+    </div>
+    <!-- links the JS/jQ -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+#Current {
+	float: right;
+    margin-right: 515px;
+}
+
+
+#lossCount {
+	float: right;
+	margin-right: 625px;
+}
+
+#Target,
+#winCount {
+	position: absolute;
+}
+
+body {
+	font-family: 'Jim Nightshade', cursive;
+}
+
+h4 {
+	font-family: 'Exo 2', sans-serif;
+}
+
+.img-rounded {
+	padding: 5px;
+}
