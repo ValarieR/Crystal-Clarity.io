@@ -75,7 +75,7 @@ function reset() {
                 $("#wins").text(winCount)
 
             } else if (score > targetNum) {
-                var $toastContent = $('<span>"Come, my child. You have much to learn."</span>').add($('<button class="btn-flat toast-action">Play Again</button>'));
+                var $toastContent = $('<span>Come, my child. You have much to learn.</span>').add($('<button class="btn-flat toast-action">Play Again</button>'));
                 Materialize.toast($toastContent, 10000);
                 console.log("loss");
 
