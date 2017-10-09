@@ -44,7 +44,7 @@ function reset() {
 
         imageGods.addClass("godsImage");
 
-        imageGods.addClass("img-rounded");
+        imageGods.addClass("responsive-img");
 
         imageGods.attr("src", imageOptions[i]);
 
@@ -53,7 +53,7 @@ function reset() {
     }
 
     // this function is responsible for the increasing current number score, and also handles wins and losses
-    $(".img-rounded").on("click", function() {
+    $(".responsive-img").on("click", function() {
 
         var godsValue = ($(this).attr("data-godsValue"));
 
@@ -66,12 +66,20 @@ function reset() {
         if (score >= targetNum) {
 
             if (score === targetNum) {
-                alert("You please me, child. My kingdom is yours.");
+                var $toastContent = $('<span>You please me, child. My kingdom is yours.</span>').add($('<button class="btn-flat toast-action">Play Again</button>'));
+                Materialize.toast($toastContent, 10000);
+                console.log("win");
+        
+                // alert("You please me, child. My kingdom is yours.");
                 winCount++;
                 $("#wins").text(winCount)
 
             } else if (score > targetNum) {
-                alert("Come, my child. You have much to learn.");
+                var $toastContent = $('<span>"Come, my child. You have much to learn."</span>').add($('<button class="btn-flat toast-action">Play Again</button>'));
+                Materialize.toast($toastContent, 10000);
+                console.log("loss");
+
+                // alert("Come, my child. You have much to learn.");
                 lossCount = lossCount + 1;
                 $("#losses").text(lossCount);
             }
@@ -84,8 +92,17 @@ function reset() {
     });
 }
 
+    
+
 $(document).ready(function() {
 
     reset();
+
+    $("#begin").on("click", function() {
+        $("#intro-msg").addClass("hide");
+        console.log("click");
+    });
+
+
 
 });

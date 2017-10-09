@@ -1,27 +1,37 @@
-#Current {
-	float: right;
-    margin-right: 515px;
-}
-
-
-#lossCount {
-	float: right;
-	margin-right: 625px;
-}
-
-#Target,
-#winCount {
-	position: absolute;
-}
-
 body {
-	font-family: 'Jim Nightshade', cursive;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Crimson Text', serif;
+	background-image: url(../images/background1.jpg);
 }
 
-h4 {
-	font-family: 'Exo 2', sans-serif;
+main {
+    flex: 1 0 auto;
 }
 
-.img-rounded {
-	padding: 5px;
+#welcome-title {
+	font-family: 'Yesteryear', cursive;
+}
+
+.responsive-img {
+	padding: 10px;
+	border-radius: 25px;
+}
+
+.words {
+	background-color: #212121;
+	border-radius: 25px;
+}
+
+.my-name {
+	font-family: 'Homemade Apple', cursive;
+	font-size: large;
+}
+
+.page-footer {
+	text-align: center;
+	bottom: 0;
+    z-index: 4;
+    position: sticky;
 }
