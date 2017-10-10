@@ -24,6 +24,13 @@ main {
 	border-radius: 25px;
 }
 
+.toast {
+	margin-right: 379px;
+	margin-top: 179px;
+	border-radius: 12px;
+	border-color: white;
+}
+
 .my-name {
 	font-family: 'Homemade Apple', cursive;
 	font-size: large;

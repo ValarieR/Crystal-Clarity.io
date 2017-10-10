@@ -66,20 +66,18 @@ function reset() {
         if (score >= targetNum) {
 
             if (score === targetNum) {
-                var $toastContent = $('<span>You please me, child. My kingdom is yours.</span>').add($('<button class="btn-flat toast-action">Play Again</button>'));
-                Materialize.toast($toastContent, 10000);
+                var $toastContent = $('<span>You please me, child. My kingdom is yours.</span>').add($('<button class="btn-flat toast-action">Allow Me To Reset</button>'));
+                Materialize.toast($toastContent, 5000);
                 console.log("win");
         
-                // alert("You please me, child. My kingdom is yours.");
                 winCount++;
                 $("#wins").text(winCount)
 
             } else if (score > targetNum) {
-                var $toastContent = $('<span>Come, my child. You have much to learn.</span>').add($('<button class="btn-flat toast-action">Play Again</button>'));
-                Materialize.toast($toastContent, 10000);
+                var $toastContent = $('<span>Come, my child. You have much to learn.</span>').add($('<button class="btn-flat toast-action">I Shall Reset</button>'));
+                Materialize.toast($toastContent, 5000, 'red darken-4 z-depth-5 red-text text-lighten-5');
                 console.log("loss");
-
-                // alert("Come, my child. You have much to learn.");
+               
                 lossCount = lossCount + 1;
                 $("#losses").text(lossCount);
             }
@@ -91,6 +89,11 @@ function reset() {
 
     });
 }
+
+        // $(".toast-action").on("click", function() {
+
+        //     reset();
+        // });
 
     
 
